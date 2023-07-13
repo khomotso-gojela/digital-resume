@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/body-background1.jpg");
+    text-align: center;
+
+}
+
+.hero-image {
+    background-image: url("../images/header-background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+}
+
+.header-text {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    position: relative;
+    top: 35%;
+}
+
+.title {
+    color: antiquewhite;
+    text-align: center;
+    border-style: solid;
+    grid-column-start: span 2;
+    padding: 20px;
+
+}
+
+.intro {
+    color: antiquewhite;
+}
+
+.header-nav {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 26, 255, .25);
+    border: 2px solid #0022ff;
+}
+
+.navtext {
+    color: antiquewhite;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10%;    
+}
+
+h1 {
+    margin: 0;
+}
+
+.heading {
+    color: antiquewhite;
+    background-color: rgb(4, 0, 255, .52);
+    margin-left: 35%;
+    margin-right: 35%; 
+    border-style: solid;
+    border-color: antiquewhite;
+}
+
+/* Main section css */
+.institutions {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+}
+
+.inst {
+    color: rgb(255, 222, 179);
+    grid-column-start: span 2;
+    border-style: solid;
+    border-color: rgb(0, 0, 255, .90);
+    border-radius: 7%;
+    background-color: rgb(250, 235, 215, .25);
+}
+
+h3 {
+    color: #002e54;
+}
+
+#codespace {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.skills {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+@keyframes lang {
+    from {
+        color: antiquewhite;}
+    to {
+        color: #002e54;}
+}
+.language {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: solid;
+    border-color: rgb(0, 0, 255, .90);
+    border-radius: 7%;
+    background-color: rgb(250, 235, 215, .25);
+    animation-name: lang;
+    animation-duration: 2;
+    animation-direction: alternate;
+}
+
+/* footer */
+#contacts {
+    color: aliceblue;
+    background-color: rgb(4, 0, 255, .25);
+
+}
+
+.contact-logo {
+    height: 3%;
+    width: 3%;
+    margin-top: 20px;
+}
