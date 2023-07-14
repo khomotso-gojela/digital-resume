@@ -81,6 +81,7 @@ picture {
     margin-right: 35%; 
     border-style: solid;
     border-color: antiquewhite;
+    margin-bottom: 50px;
 }
 
 /* Main section css */
@@ -119,6 +120,10 @@ h3 {
     gap: 10px;
 }
 
+p {
+    color: antiquewhite;
+}
+
 @keyframes lang {
     from {
         color: antiquewhite;}
@@ -135,6 +140,12 @@ h3 {
     animation-name: lang;
     animation-duration: 2;
     animation-direction: alternate;
+}
+
+.tech-skills {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 .soft-skills {
@@ -232,8 +243,50 @@ h3 {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
     }
+
+    .contact-logo {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-    
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 300%;
+        align-self: center;
+    }
+    .title > h2 {
+        font-size: 200%;
+    }
+    .intro {
+        align-self: start;
+        font-size: 170%;
+    }
+
+    .navtext {
+        font-size: 159%;
+    }
+    h2 {
+        font-size: 200%;
+    }
+    h3 {
+        font-size: 170%;
+    }
+    h4 {
+        font-size: 160%;
+    }
+    .inst > p, .soft-skills > p {
+        font-size: 140%;
+    }
+
+    label {
+        font-size: 160%;
+    }
+    input {
+        padding: 0.8% 8%;
+    }
 }
