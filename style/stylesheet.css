@@ -19,11 +19,11 @@ body {
     margin-left: 2%;
     margin-right: 2%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     position: relative;
-    top: 35%;
+    top: 20%;
 }
 
 .title {
@@ -114,8 +114,8 @@ h3 {
 .skills {
     margin: 3%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
     gap: 10px;
 }
 
@@ -137,16 +137,26 @@ h3 {
     animation-direction: alternate;
 }
 
+.soft-skills {
+    border-style: solid;
+    border-color: rgb(0, 0, 255, .90);
+    border-radius: 7%;
+    background-color: rgb(250, 235, 215, .25);
+}
+
 /* footer */
 #contacts {
     color: aliceblue;
     background-color: rgb(4, 0, 255, .25);
+}
 
+#contacts > h3 {
+    color: antiquewhite;
 }
 
 .contact-logo {
-    height: 3%;
-    width: 3%;
+    height: 70px;
+    width: 70px;
     margin-top: 20px;
 }
 
@@ -165,11 +175,65 @@ h3 {
     }
     .title > h2 {
         margin-top:0px;
+        font-size: 1.3em;
+    }
+    .title > h1 {
+        font-size: 1.6em;
+    }
+    .intro {
+        padding: 10px;
+    }
+
+    .header-nav {
+        padding: 0;
+    }
+    .navtext {
+        padding: 0px;
     }
 
     .institutions {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
+        display: flex;
+        flex-direction: column;
+    }
+    #codespace {
+        grid-column-start: span 2;
+    }
+    .inst {
+        grid-column-start: span 2;
     }
 
+    .heading {
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size: 1.3em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 0.9em;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-logo {
+        height: 40px;
+        width: 40px;
+        margin-top: 20px;
+    }
+}
+
+/* Tablet display */
+@media only screen and (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
 }
